@@ -10,3 +10,12 @@ func TestSay_USA(t *testing.T) {
 	}
 
 }
+
+func TestSay_Canada(t *testing.T) {
+	expected := "Hello, Canada"
+	actual := Say_Canada()
+	if actual != expected{
+		t.Error("Test failed")
+	}
+
+}

@@ -14,7 +14,7 @@ if [[ -d src/github.com/jstemmer/go-junit-report ]]; then
   rm -rf src/github.com/jstemmer/go-junit-report
 fi
 echo "Get github.com/jstemmer/go-junit-report"
-go get github.com/jstemmer/go-junit-report
+go get -d github.com/jstemmer/go-junit-report
 
 go build -o $GOPATH/bin/go-junit-report github.com/jstemmer/go-junit-report
 if [[ -f testreport.xml ]]; then

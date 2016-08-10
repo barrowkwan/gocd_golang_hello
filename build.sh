@@ -9,6 +9,13 @@ if [[ -f $GOPATH/bin/go-junit-report ]]; then
   echo "Remove binary : $GOPATH/bin/go-junit-report"
   rm -rf $GOPATH/bin/go-junit-report
 fi
+if [[ -d src/github.com/jstemmer/go-junit-report ]]; then
+  echo "Remove external library : github.com/jstemmer/go-junit-report"
+  rm -rf src/github.com/jstemmer/go-junit-report
+fi
+echo "Get github.com/jstemmer/go-junit-report"
+go get github.com/jstemmer/go-junit-report
+
 go build -o $GOPATH/bin/go-junit-report github.com/jstemmer/go-junit-report
 if [[ -f testreport.xml ]]; then
   echo "Remove old test report : testreport.xml"

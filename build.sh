@@ -23,5 +23,13 @@ if [[ -f testreport.xml ]]; then
 fi
 go test -v github.com/barrowkwan/gocd_golang_hello... | $GOPATH/bin/go-junit-report > testreport.xml
 
-GOOS=darwin go build -o $GOPATH/bin/helloworld github.com/barrowkwan/gocd_golang_hello
+echo "======================="
+echo "Building binary for OSX"
+GOOS=darwin go build -o $GOPATH/bin/helloworld_osx github.com/barrowkwan/gocd_golang_hello
+echo "======================="
 
+
+echo "======================="
+echo "Building binary for linux"
+GOOS=linux go build -o $GOPATH/bin/helloworld_linux github.com/barrowkwan/gocd_golang_hello
+echo "======================="

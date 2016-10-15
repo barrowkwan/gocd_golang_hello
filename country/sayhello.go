@@ -1,13 +1,9 @@
 package country
 
-import "fmt"
-
-func Say_USA()  {
-	fmt.Printf("Hello, USA\n")
-
+func Say_USA() string {
+	return "Hello, USA"
 }
 
-func Say_Canada()  {
-	fmt.Printf("Hello, Canada\n")
-
+func Say_Canada() string {
+	return "Hello, Canada"
 }

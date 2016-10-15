@@ -1,7 +1,10 @@
 package main
 
-import "github.com/barrowkwan/gocd_golang_hello/country"
+import (
+	"github.com/barrowkwan/gocd_golang_hello/country"
+	"fmt"
+)
 
 func main()  {
-	country.Say_USA()
+	fmt.Println(country.Say_USA())
 }

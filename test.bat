@@ -1,3 +1,3 @@
-mkdir .\build
-mkdir .\build\bin
-mkdir .\build\Debug
+mkdir .\build1
+mkdir .\build1\bin
+mkdir .\build1\Debug
